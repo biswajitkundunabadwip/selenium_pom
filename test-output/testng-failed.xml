@@ -6,8 +6,8 @@
       <class name="selenium_pom.test.SubmitOrder">
         <methods>
           <include name="tearDown"/>
-          <include name="submitOrder"/>
           <include name="launchApplication"/>
+          <include name="submitOrder" invocation-numbers="0"/>
         </methods>
       </class> <!-- selenium_pom.test.SubmitOrder -->
     </classes>

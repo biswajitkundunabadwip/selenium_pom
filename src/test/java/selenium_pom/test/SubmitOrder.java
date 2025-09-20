@@ -1,9 +1,11 @@
 package selenium_pom.test;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import selenium_pom.pages.CartPage;
@@ -17,9 +19,9 @@ import testcomponenets.BaseTest;
 
 public class SubmitOrder extends BaseTest{
 	String productName = "ZARA COAT 3";
-	@Test
-	public void submitOrder() throws InterruptedException {
-		ProductCatalogue productCatalogue = landingPage.loginApplication("biswajit.kundu9@gmail.com", "Welcome@123");
+	@Test(dataProvider = "getData")
+	public void submitOrder(HashMap<String, String>input) throws InterruptedException {
+		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("username"), input.get("password"));
 		List<WebElement> products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(productName);
 		CartPage cartPage = productCatalogue.goToCartPage();
@@ -42,4 +44,12 @@ public class SubmitOrder extends BaseTest{
 //		Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));
 //		
 //}
+	@DataProvider
+	public Object [][] getData() {
+		HashMap<Object, Object> hashMap = new HashMap<>();
+		hashMap.put("username", "anshika@gmail.com");
+		hashMap.put("password", "Welcome@123");
+		
+		return new Object[][] {{hashMap}};
+	}
 }

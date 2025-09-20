@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\biswa\AppData\Local\Temp\testng-eclipse-101117703\testng-customsuite.xml</span>
+                    <span>C:\Users\biswa\AppData\Local\Temp\testng-eclipse--3757282\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="selenium_pom.test.SubmitOrder" class="method navigator-link" hash-for-method="submitOrder">submitOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="selenium_pom.test.SubmitOrder" class="method navigator-link" hash-for-method="submitOrder({password=Welcome@123, username=anshika@gmail.com})">submitOrder({password=Welcome@123, username=anshika@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -126,18 +126,19 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="submitOrder">
-                  </a> <!-- submitOrder -->
+                  <a name="submitOrder({password=Welcome@123, username=anshika@gmail.com})">
+                  </a> <!-- submitOrder({password=Welcome@123, username=anshika@gmail.com}) -->
                   <span class="method-name">submitOrder</span>
+                  <span class="parameters">({password=Welcome@123, username=anshika@gmail.com})</span>
                   <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1040, 574)
   (Session info: chrome=140.0.7339.186)
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9e3071f116b8508d022e30395e9e61f8, clickElement {id=f.B46FB66DCFC9D0910A503095ED7A0D52.d.D72D70190776FEBCF5FE13C092C18402.e.81}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.186, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\biswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56578}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56578/devtoo..., se:cdpVersion: 140.0.7339.186, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9e3071f116b8508d022e30395e9e61f8)] -&gt; css selector: .totalRow button]
-Session ID: 9e3071f116b8508d022e30395e9e61f8
+Command: [4f8b2671580a2f73c5d44633b4995bbe, clickElement {id=f.712C4B249824EE9BE496FB7A4CE1046B.d.E8B32A9027E6ADB4FC42E8AC5F8D270F.e.95}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.186, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\biswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50836}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50836/devtoo..., se:cdpVersion: 140.0.7339.186, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4f8b2671580a2f73c5d44633b4995bbe)] -&gt; css selector: .totalRow button]
+Session ID: 4f8b2671580a2f73c5d44633b4995bbe
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -153,9 +154,9 @@ Session ID: 9e3071f116b8508d022e30395e9e61f8
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
 	at selenium_pom.pages.CartPage.goToCheckout(CartPage.java:35)
-	at selenium_pom.test.SubmitOrder.submitOrder(SubmitOrder.java:29)
+	at selenium_pom.test.SubmitOrder.submitOrder(SubmitOrder.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -191,7 +192,7 @@ Session ID: 9e3071f116b8508d022e30395e9e61f8
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\biswa\AppData\Local\Temp\testng-eclipse-101117703\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\biswa\AppData\Local\Temp\testng-eclipse--3757282\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -244,7 +245,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitOrder')
 data.setCell(0, 2, 'selenium_pom.test.SubmitOrder')
-data.setCell(0, 3, 3619);
+data.setCell(0, 3, 3883);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -283,12 +284,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">submitOrder</span>
-                <span class="method-start">24707 ms</span>
+                <span class="method-name">submitOrder({password=Welcome@123, username=anshika@gmail.com})</span>
+                <span class="method-start">7169 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28344 ms</span>
+                <span class="method-start">11058 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

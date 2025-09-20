@@ -2,16 +2,23 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-20T21:14:29 IST" name="Default suite" finished-at="2025-09-20T21:14:58 IST" duration-ms="28540">
+  <suite started-at="2025-09-20T21:27:58 IST" name="Default suite" finished-at="2025-09-20T21:28:10 IST" duration-ms="11265">
     <groups>
     </groups>
-    <test started-at="2025-09-20T21:14:29 IST" name="Default test" finished-at="2025-09-20T21:14:58 IST" duration-ms="28540">
+    <test started-at="2025-09-20T21:27:58 IST" name="Default test" finished-at="2025-09-20T21:28:10 IST" duration-ms="11265">
       <class name="selenium_pom.test.SubmitOrder">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:selenium_pom.test.SubmitOrder@2b71e916]" started-at="2025-09-20T21:14:29 IST" name="launchApplication" finished-at="2025-09-20T21:14:54 IST" duration-ms="24706" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:selenium_pom.test.SubmitOrder@34e9fd99]" started-at="2025-09-20T21:27:58 IST" name="launchApplication" finished-at="2025-09-20T21:28:06 IST" duration-ms="7167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder()[pri:0, instance:selenium_pom.test.SubmitOrder@2b71e916]" started-at="2025-09-20T21:14:54 IST" name="submitOrder" finished-at="2025-09-20T21:14:58 IST" duration-ms="3619" status="FAIL">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:selenium_pom.test.SubmitOrder@34e9fd99]" started-at="2025-09-20T21:28:06 IST" name="submitOrder" data-provider="getData" finished-at="2025-09-20T21:28:10 IST" duration-ms="3883" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Welcome@123, username=anshika@gmail.com}]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element is not clickable at point (1040, 574)
@@ -19,10 +26,10 @@
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9e3071f116b8508d022e30395e9e61f8, clickElement {id=f.B46FB66DCFC9D0910A503095ED7A0D52.d.D72D70190776FEBCF5FE13C092C18402.e.81}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.186, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\biswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56578}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56578/devtoo..., se:cdpVersion: 140.0.7339.186, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9e3071f116b8508d022e30395e9e61f8)] -> css selector: .totalRow button]
-Session ID: 9e3071f116b8508d022e30395e9e61f8]]>
+Command: [4f8b2671580a2f73c5d44633b4995bbe, clickElement {id=f.712C4B249824EE9BE496FB7A4CE1046B.d.E8B32A9027E6ADB4FC42E8AC5F8D270F.e.95}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.186, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\biswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50836}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50836/devtoo..., se:cdpVersion: 140.0.7339.186, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4f8b2671580a2f73c5d44633b4995bbe)] -> css selector: .totalRow button]
+Session ID: 4f8b2671580a2f73c5d44633b4995bbe]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1040, 574)
@@ -30,10 +37,10 @@ Session ID: 9e3071f116b8508d022e30395e9e61f8]]>
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9e3071f116b8508d022e30395e9e61f8, clickElement {id=f.B46FB66DCFC9D0910A503095ED7A0D52.d.D72D70190776FEBCF5FE13C092C18402.e.81}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.186, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\biswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56578}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56578/devtoo..., se:cdpVersion: 140.0.7339.186, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9e3071f116b8508d022e30395e9e61f8)] -> css selector: .totalRow button]
-Session ID: 9e3071f116b8508d022e30395e9e61f8
+Command: [4f8b2671580a2f73c5d44633b4995bbe, clickElement {id=f.712C4B249824EE9BE496FB7A4CE1046B.d.E8B32A9027E6ADB4FC42E8AC5F8D270F.e.95}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.186, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\biswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50836}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50836/devtoo..., se:cdpVersion: 140.0.7339.186, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4f8b2671580a2f73c5d44633b4995bbe)] -> css selector: .totalRow button]
+Session ID: 4f8b2671580a2f73c5d44633b4995bbe
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -49,9 +56,9 @@ at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
 at selenium_pom.pages.CartPage.goToCheckout(CartPage.java:35)
-at selenium_pom.test.SubmitOrder.submitOrder(SubmitOrder.java:29)
+at selenium_pom.test.SubmitOrder.submitOrder(SubmitOrder.java:31)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -84,7 +91,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium_pom.test.SubmitOrder@2b71e916]" started-at="2025-09-20T21:14:58 IST" name="tearDown" finished-at="2025-09-20T21:14:58 IST" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium_pom.test.SubmitOrder@34e9fd99]" started-at="2025-09-20T21:28:10 IST" name="tearDown" finished-at="2025-09-20T21:28:10 IST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
