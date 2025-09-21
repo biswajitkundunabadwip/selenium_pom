@@ -1,5 +1,6 @@
 package selenium_pom.test;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
@@ -35,6 +36,18 @@ public class SubmitOrder extends BaseTest{
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 	}
 	
+	
+	@DataProvider
+	public Object[][] getData() throws IOException
+	{
+
+		
+		List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir")+"//src//main//java//test//datas//PurchaseOrder.json");
+		return new Object[][]  {{data.get(0)} };
+		
+	}
+	
+	
 //	@Test(dependsOnMethods= {"submitOrder"})
 //	public void OrderHistoryTest()
 //	{
@@ -44,12 +57,13 @@ public class SubmitOrder extends BaseTest{
 //		Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));
 //		
 //}
-	@DataProvider
-	public Object [][] getData() {
-		HashMap<Object, Object> hashMap = new HashMap<>();
-		hashMap.put("username", "anshika@gmail.com");
-		hashMap.put("password", "Welcome@123");
-		
-		return new Object[][] {{hashMap}};
-	}
+	
+//	@DataProvider
+//	public Object [][] getData() {
+//		HashMap<Object, Object> hashMap = new HashMap<>();
+//		hashMap.put("username", "anshika@gmail.com");
+//		hashMap.put("password", "Welcome@123");
+//		
+//		return new Object[][] {{hashMap}};
+//	}
 }
